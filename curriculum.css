@@ -6,7 +6,7 @@
     margin: 0;
     padding: 0;
   }
-  .header{
+  .encabezado{
     background-color: blueviolet;
     height: 20%;
     width: auto;
@@ -30,5 +30,7 @@
     margin: 0;
     box-sizing: border-box;
     }
-  
+  .lista-contacto{
+    list-style: none;
+  }
   
