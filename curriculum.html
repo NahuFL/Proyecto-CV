@@ -6,140 +6,213 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Proyecto CV</title>
     <link rel="stylesheet" type="text/css" href="curriculum.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://kit.fontawesome.com/57e26e3d23.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300;0,400;1,300&display=swap");
+    </style>
   </head>
   <body>
     <div class="encabezado">
-      <h1 id="nombre">ROBERTA GONZALEZ</h1>
-      <h2 id="profesion">DISEÑADORA GRAFICA</h2>
+      <div>
+        <figure id="img-perfil">
+          <img
+            src="https://randomuser.me/api/portraits/women/73.jpg"
+            alt="Imagen de perfil"
+          />
+        </figure>
+      </div>
+      <div class="persona">
+        <h1 id="nombre">ROBERTA GONZALEZ</h1>
+        <h2 id="profesion">DISEÑADORA GRÁFICA</h2>
+      </div>
     </div>
-    <aside class="sidebar">
-      <figure>
-        <img 
-          src="https://randomuser.me/api/portraits/women/78.jpg" 
-          alt="Imagen de perfil"
-        >
-      </figure>
-      <section>
-        <h2>CONTACTO</h2>
-        <ul class="fa-ul">
-          <li><span class="fa-li"><i class="fa-sharp fa-solid fa-house"></i></span>Calle z, Ciudad x</li>
-          <li><span class="fa-li"><i class="fa-solid fa-mobile-screen"></i></span>011-3245-2345</li>
-          <li><span class="fa-li"><i class="fa-solid fa-envelope"></i></span>lalala@gmail.com</li>
-          <li><span class="fa-li"><i class="fa-solid fa-globe"></i></span>www.webrandom.com</li>
-        </ul>
-      </section>
-      <section>
-        <h2>HABILIDADES PERSONALES</h2>
-        <ul>
-          <li>Leer</li>
-          <li>Escreibir</li>
-          <li>Bailar</li>
-          <li>Oratoria</li>
-        </ul>
-      </section>
-      <section>
-        <h2>HABILIDADES TECNICAS</h2>
-        <ul>
-          <li>Leer</li>
-          <li>Escreibir</li>
-          <li>Bailar</li>
-          <li>Oratoria</li>
-        </ul>
-      </section>
-      <section>
-        <h2>IDIOMAS</h2>
-        <ul>
-          <li>Español: Nativo</li>
-          <li>Ingles: Avanzado</li>
-          <li>Portugues: Basico</li>
-        </ul>
-      </section>
-    </aside>
-    <main class="info">
-      <section>
-        <h2>PERFIL</h2>
-        <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima 
-        laboriosam, nemo atque pariatur consequuntur amet commodi nesciunt 
-        veritatis cupiditate! Error modi est ab iusto non nulla at, deserunt 
-        aspernatur atque.
-        </p>
-      </section>
-      <section>
-        <h2>EDUCACION</h2>
-        <h4>Titulo/diploma</h4>
-        <h4>Universidad/Escuela, Ubicacion, 2015-2020</h4>
-        <h4>Titulo/diploma</h4>
-        <h4>Universidad/Escuela, Ubicacion, 2015-2020</h4>
-      </section>
-      <section>
-        <h2>EXPERIENCIA PROFESIONAL</h2>
-        <article>
-          <h3>PUESTO DE TRABAJO</h3>
-          <h4>Empresa, ciudad, actividad</h4>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate
-             harum libero facere veniam, iure nisi adipisci dolorum minus et 
-             dolorem non ullam inventore distinctio possimus nulla doloremque.
-              Asperiores, explicabo molestiae.
-          </p>
-          <h5>Tareas realizadas</h5>
-          <ul>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
+    <div class="boton">
+    <button type="button" id="boton-invisible">Display barra</button>
+  </div>
+    <nav id="navegacion">
+      <a href="#ancla-perfil" class="anclas"><h3>Perfil</h3></a>
+      <a href="#ancla-formacion" class="anclas"><h3>Formación</h3></a>
+      <a href="#ancla-experiencia" class="anclas"><h3>Experiencia</h3></a>
+      <a href="#ancla-habilidad" class="anclas"><h3>Habilidades</h3></a>
+      <a href="#ancla-social" class="anclas"><h3>Contacto Social</h3></a>
+    </nav>
+    <div class="contenedor-cuerpo">
+      <aside class="barra">
+        <section class="contacto">
+          <h2>CONTACTO</h2>
+          <ul class="lista">
+            <li>
+              <span id="geolocal"></span>
+              Calle z, Ciudad x
+            </li>
+            <li>
+              <span id="telefono"></span>
+              011-3245-2345
+            </li>
+            <li>
+              <span id="email"></span>
+              robgonz@gmail.com
+            </li>
+            <li>
+              <span id="web"></span
+              ><a href="https://www.google.com/" target="_blank">
+                www.proyecto.com</a
+              >
+            </li>
           </ul>
-        </article>
-        <article>
-          <h3>PUESTO DE TRABAJO</h3>
-          <h4>Empresa, ciudad, actividad</h4>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate
-             harum libero facere veniam, iure nisi adipisci dolorum minus et
-              dolorem non ullam inventore distinctio possimus nulla doloremque.
-               Asperiores, explicabo molestiae.
-          </p>
-          <h5>Tareas realizadas</h5>
-          <ul>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
+        </section>
+        <section class="habilidades">
+          <a name="ancla-habilidad"></a>
+          <h2>HABILIDADES</h2>
+          <h3>PERSONALES</h3>
+          <ul class="lista">
+            <li>Habilidad 1<meter value="50" min="0" max="100"></meter></li>
+            <li>Habilidad 2<meter value="85" min="0" max="100"></meter></li>
+            <li>Habilidad 3<meter value="70" min="0" max="100"></meter></li>
+            <li>Habilidad 4<meter value="90" min="0" max="100"></meter></li>
           </ul>
-        </article>
-        <article>
-          <h3>PUESTO DE TRABAJO</h3>
-          <h4>Empresa, ciudad, actividad</h4>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate 
-            harum libero facere veniam, iure nisi adipisci dolorum minus et
-             dolorem non ullam inventore distinctio possimus nulla doloremque.
-              Asperiores, explicabo molestiae.
-          </p>
-          <h5>Tareas realizadas</h5>
-          <ul>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
+          <h3>TÉCNICAS</h3>
+          <ul class="lista">
+            <li>Habilidad 1<meter value="50" min="0" max="100"></meter></li>
+            <li>Habilidad 2<meter value="85" min="0" max="100"></meter></li>
+            <li>Habilidad 3<meter value="70" min="0" max="100"></meter></li>
+            <li>Habilidad 4<meter value="90" min="0" max="100"></meter></li>
           </ul>
-        </article>
-        <article>
-          <h3>PUESTO DE TRABAJO</h3>
-          <h4>Empresa, ciudad, actividad</h4>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate 
-            harum libero facere veniam, iure nisi adipisci dolorum minus et
-             dolorem non ullam inventore distinctio possimus nulla doloremque.
-              Asperiores, explicabo molestiae.
-          </p>
-          <h5>Tareas realizadas</h5>
-          <ul>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
+        </section>
+        <section class="idiomas">
+          <h2>IDIOMAS</h2>
+          <ul class="lista">
+            <li>Español: Nativo</li>
+            <li>Inglés: Avanzado</li>
+            <li>Portugués: Básico</li>
           </ul>
-        </article>
-      </section>
-    </main>
-    <script src="https://kit.fontawesome.com/57e26e3d23.js" crossorigin="anonymous"></script>
+        </section>
+        <section class="social">
+          <a name="ancla-social"></a>
+          <h2>LINKS SOCIALES</h2>
+          <ul class="lista">
+            <li>
+              <a href="https://www.facebook.com/" class="fb" target="_blank"></a
+              >Facebook
+            </li>
+            <li>
+              <a href="https://twitter.com/" class="tt" target="_blank"></a
+              >Twitter
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/"
+                class="ig"
+                target="_blank"
+              ></a
+              >Instagram
+            </li>
+            <li>
+              <a href="https://ar.linkedin.com/" class="li" target="_blank"></a
+              >LinkedIn
+            </li>
+          </ul>
+        </section>
+      </aside>
+      <main class="info">
+        <section>
+          <a name="ancla-perfil"></a>
+          <h2>PERFIL</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima
+            laboriosam, nemo atque pariatur consequuntur amet commodi nesciunt
+            veritatis cupiditate! Error modi est ab iusto non nulla at, deserunt
+            aspernatur atque.
+          </p>
+        </section>
+        <section id="educacion">
+          <a name="ancla-formacion"></a>
+          <h2>FORMACIÓN</h2>
+          <h4>Título/Diploma</h4>
+          <h4>Universidad/Escuela, Ubicación, 2015-2020</h4>
+          <h4>Título/Diploma</h4>
+          <h4>Universidad/Escuela, Ubicación, 2015-2020</h4>
+        </section>
+        <section id="profesional">
+          <a name="ancla-experiencia"></a>
+          <h2>EXPERIENCIA PROFESIONAL</h2>
+          <article class="experiencia">
+            <h3>PUESTO DE TRABAJO</h3>
+            <h4>Empresa, ciudad, actividad.</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Voluptate harum libero facere veniam, iure nisi adipisci dolorum
+              minus et dolorem non ullam inventore distinctio possimus nulla
+              doloremque. Asperiores, explicabo molestiae.
+            </p>
+            <h4>Tareas realizadas</h4>
+            <ul>
+              <li>Tarea 1</li>
+              <li>Tarea 2</li>
+              <li>Tarea 3</li>
+            </ul>
+          </article>
+          <article class="experiencia">
+            <h3>PUESTO DE TRABAJO</h3>
+            <h4>Empresa, ciudad, actividad.</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Voluptate harum libero facere veniam, iure nisi adipisci dolorum
+              minus et dolorem non ullam inventore distinctio possimus nulla
+              doloremque. Asperiores, explicabo molestiae.
+            </p>
+            <h4>Tareas realizadas</h4>
+            <ul>
+              <li>Tarea 1</li>
+              <li>Tarea 2</li>
+              <li>Tarea 3</li>
+            </ul>
+          </article>
+          <article class="experiencia">
+            <h3>PUESTO DE TRABAJO</h3>
+            <h4>Empresa, ciudad, actividad.</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Voluptate harum libero facere veniam, iure nisi adipisci dolorum
+              minus et dolorem non ullam inventore distinctio possimus nulla
+              doloremque. Asperiores, explicabo molestiae.
+            </p>
+            <h4>Tareas realizadas</h4>
+            <ul>
+              <li>Tarea 1</li>
+              <li>Tarea 2</li>
+              <li>Tarea 3</li>
+            </ul>
+          </article>
+          <article class="experiencia">
+            <h3>PUESTO DE TRABAJO</h3>
+            <h4>Empresa, ciudad, actividad.</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Voluptate harum libero facere veniam, iure nisi adipisci dolorum
+              minus et dolorem non ullam inventore distinctio possimus nulla
+              doloremque. Asperiores, explicabo molestiae.
+            </p>
+            <h4>Tareas realizadas</h4>
+            <ul>
+              <li>Tarea 1</li>
+              <li>Tarea 2</li>
+              <li>Tarea 3</li>
+            </ul>
+          </article>
+        </section>
+      </main>
+    </div>
+    <script src="curriculum.js"></script>
   </body>
 </html>
